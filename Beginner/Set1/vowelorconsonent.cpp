@@ -3,13 +3,13 @@ int main()
 {
   char x,y;
   scanf("%c",&x);
-  y=tolower(x);
-  if (isdigit(y)==true)
-  printf("Invalid Input");
-  else if(x=='a'||x=='e'||x=='i'||x=='o'||x=='u')
-  printf("Vowel");
-  else if (y>='a'||y<='z')
-  printf("Consonent");
+  if((x>='a' && x<='z')||(x>='A' && x<='Z'))
+  {
+    if(x=='a'||x=='A'||x=='e'||x=='E'||x=='i'||x=='I'||x=='o'||x=='O'||x=='u'||x=='U')
+    printf("Vowel");
+    else
+    printf("Consonent");
+  }
   else
   printf("Invalid Input");
   return 0;
