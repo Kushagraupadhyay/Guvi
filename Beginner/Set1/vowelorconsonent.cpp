@@ -1,7 +1,7 @@
 #include <iostream>
 int main()
 {
-  char x,y;
+  char x;
   scanf("%c",&x);
   if((x>='a' && x<='z')||(x>='A' && x<='Z'))
   {
