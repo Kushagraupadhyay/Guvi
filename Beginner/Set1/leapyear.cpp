@@ -33,6 +33,9 @@ scanf("%s",&x);
 if(arraypass(x))
 {
   a=atoi(x);
+  if(a<0)
+  printf("Invalid Input");
+  else{
   if(a%400==0)
   printf("Leap Year");
   else if (a%100==0)
@@ -41,6 +44,7 @@ if(arraypass(x))
   printf("Leap Year");
   else
   printf("Not a Leap Year");
+}
 }
 else
 printf("Invalid Input");
