@@ -51,11 +51,11 @@ if(arraypass(x))
  }
  if(flagg==1)
  {
-   printf("Not a Palindrome");
+   printf("No");
  }
  else
  {
-   printf("Palindrome");
+   printf("Yes");
  }
 }
 else
