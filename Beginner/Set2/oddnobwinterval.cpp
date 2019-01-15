@@ -35,7 +35,7 @@ if(arraypass(x))
   {
       a=atoi(x);
       b=atoi(y);
-      if(a<=10000 && b<=10000)
+      if(a<=1000000 && b<=100000)
       {
       for(i=a+1;i<b;i++)
       {
