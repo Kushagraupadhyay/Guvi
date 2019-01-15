@@ -51,6 +51,8 @@ if(arraypass(x))
 
       }
   }
+  else
+  printf("Invalid Input");
 }
 else
 printf("Invalid Input");
