@@ -35,11 +35,16 @@ if(arraypass(x))
   {
       a=atoi(x);
       b=atoi(y);
+      if(a<=10000 && b<=10000)
+      {
       for(i=a+1;i<b;i++)
       {
         if(i%2!=0)
         printf("%d ",i);
       }
+     }
+    else
+    printf("Invalid Input");
   }
 }
 else
