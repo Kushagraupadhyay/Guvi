@@ -1,0 +1,39 @@
+#include<iostream>
+int main()
+{
+  int n,a[50],isum,jsum,i,j,count1=0,count2,avgi,avgj,flag=0;
+  scanf("%d",&n);
+  for(i=0;i<n;i++)
+  {
+    scanf("%d",&a[i]);
+  }
+  isum=0;
+  for(i=0;i<n-1;i++)
+  {
+    jsum=0;
+    count2=0;
+    count1++;
+    isum+=a[i];
+    avgi=isum/count1;
+    for(j=i+1;j<n;j++)
+    {
+      jsum+=a[j];
+      count2++;
+    }
+    avgj=jsum/count2;
+    if(avgi==avgj)
+    {
+      flag=1;
+      break;
+    }
+  }
+  if(flag==1)
+  {
+    printf("yes");
+  }
+  else
+  {
+    printf("no");
+  }
+  return 0;
+}
