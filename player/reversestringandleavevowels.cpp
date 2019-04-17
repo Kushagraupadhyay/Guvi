@@ -4,25 +4,14 @@
 using namespace std;
 int main()
 {
-  char a[100],count,i,flag;
-  scanf("%s",&a);
-  count=0;
-  flag=0;
-  i=0;
-  while(flag!=1)
+  char a[100];
+  int n,i;
+  scanf("%d",&n);
+  for(i=0;i<n;i++)
   {
-    if(a[i]=='\0')
-    {
-      flag=1;
-    }
-    else
-    {
-      count++;
-    }
-    i++;
-
+    scanf("%c",&a[i]);
   }
-  for(i=count-1;i>=0;i--)
+  for(i=n-1;i>=0;i--)
   {
     if(a[i]=='a' || a[i]=='e' || a[i]=='i' || a[i]=='o' || a[i]=='u' || a[i]=='A' || a[i]=='E' || a[i]=='I' || a[i]=='O' || a[i]=='U')
     {
