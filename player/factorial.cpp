@@ -4,8 +4,8 @@
 using namespace std;
 int main()
 {
-  int a[50],n,i,fact;
-  scanf("%d",&n);
+  long long int a[50],n,i,fact;
+  cin>>n;
   if(n<0)
   {
     printf("Enter a positive number");
@@ -14,7 +14,7 @@ int main()
   {
     if(n==0)
     {
-      printf("1");
+      printf("0");
     }
     else
     {
@@ -23,7 +23,7 @@ int main()
       {
         fact*=i;
       }
-      printf("%d",fact);
+      cout<<fact;
     }
 
   }
