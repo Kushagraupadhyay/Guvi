@@ -14,7 +14,7 @@ int main()
   {
     if(n==0)
     {
-      printf("0");
+      printf("1");
     }
     else
     {
